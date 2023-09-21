@@ -40,3 +40,4 @@ learning Python
 	=> django-admin startproject <project_name>
 	=> cd <project_name>
 	=> python manage.py runserver
+ 7. Django

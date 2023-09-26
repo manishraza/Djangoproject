@@ -2,7 +2,7 @@ from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
-
+print(BASE_DIR)
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'django-insecure-9y%1cdxshywa6=^gt8=e6fk&64j*x-xtpy1po36n7*f8qm2o)='
@@ -25,6 +25,8 @@ INSTALLED_APPS = [
     'myapp',
     'temp_inheritance',
     'tables',
+    'form',
+
 ]
 
 MIDDLEWARE = [

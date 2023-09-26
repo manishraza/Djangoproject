@@ -9,10 +9,12 @@
          <th scope="col">age</th>
         <th scope="col">address</th>
         <th scope="col">bio</th>
+         <th scope="col">contact</th>
+         <th scope="col">roll_no</th>
     </tr>
     </thead>
     <tbody>
-    {% for item in students %}
+    {% for item in students%}
     <tr>
         <th scope="row">{{ forloop.counter }}</th>
         <td>{{ item.name }}</td>
@@ -20,6 +22,8 @@
          <td>{{ item.age }}</td>
         <td>{{ item.address}}</td>
          <td>{{ item.bio}}</td>
+         <td>{{ item.studentprofile.roll_no}}</td>
+         <td>{{ item.studentprofile.contact}}</td>
 
 
     </tr>

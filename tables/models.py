@@ -9,7 +9,7 @@ class student(models.Model):
     age = models.IntegerField()
     address = models.CharField(max_length=20)
     bio = models.TextField()
-    classroom = models.ForeignKey(Classroom, on_delete=models.CASCADE,
+    c = models.ForeignKey(Classroom, on_delete=models.CASCADE,
                                   related_name="classroom_students", null=True, blank=True)
 
     def __str__(self):
@@ -37,7 +37,7 @@ class Detail(models.Model):
     brand = models.CharField(max_length=14)
     EMI_no = models.IntegerField()
     def __str__(self):
-        return self.model_id_no
+        return self.model_id_no.name
 
 class Publication(models.Model):
     title = models.CharField(max_length=20)

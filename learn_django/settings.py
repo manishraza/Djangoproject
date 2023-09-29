@@ -26,6 +26,7 @@ INSTALLED_APPS = [
     'temp_inheritance',
     'tables',
     'form',
+    'crud',
 
 ]
 
